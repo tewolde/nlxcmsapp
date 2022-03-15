@@ -68,7 +68,8 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => \WebReinvent\VaahCms\Entities\User::class,
+            // 'model' => App\Models\User::class,
+            'model' => App\NlxCms\Entities\User::class,
         ],
 
         // 'users' => [

@@ -14,18 +14,18 @@ use Dotenv\Dotenv;
 */
 $env = $app->detectEnvironment(function(){
 
-    $vaahcms_file = base_path('/vaahcms.json');
+    $nlxcms_file = base_path('/nlxcms.json');
     $env_file_name = null;
 
-    if(file_exists($vaahcms_file))
+    if(file_exists($nlxcms_file))
     {
 
-        $vaahcms = file_get_contents(base_path('/vaahcms.json'));
-        $vaahcms = json_decode($vaahcms, true);
+        $nlxcms = file_get_contents(base_path('/nlxcms.json'));
+        $nlxcms = json_decode($nlxcms, true);
 
-        if(isset($vaahcms['environments']) && isset($vaahcms['environments']['default']))
+        if(isset($nlxcms['environments']) && isset($nlxcms['environments']['default']))
         {
-            $env_file_name = $vaahcms['environments']['default']['env_file'];
+            $env_file_name = $nlxcms['environments']['default']['env_file'];
         }
 
         $host = null;
@@ -73,13 +73,13 @@ $env = $app->detectEnvironment(function(){
 
         if($actual_url && is_null($is_sub_domain))
         {
-            if(isset($vaahcms['environments'])
-                && is_array($vaahcms['environments'])
-                && count($vaahcms['environments'])>0
+            if(isset($nlxcms['environments'])
+                && is_array($nlxcms['environments'])
+                && count($nlxcms['environments'])>0
             )
             {
                 $actual_url = explode( '://', $actual_url);
-                foreach ($vaahcms['environments'] as $key => $environment)
+                foreach ($nlxcms['environments'] as $key => $environment)
                 {
                     $environment_app_url = explode( '://', $environment['app_url']);
 
@@ -94,7 +94,7 @@ $env = $app->detectEnvironment(function(){
         } else if(!is_null($is_sub_domain))
         {
 
-            foreach ($vaahcms['environments'] as $key => $environment)
+            foreach ($nlxcms['environments'] as $key => $environment)
             {
                 $environment_app_url = explode( '.', $environment['app_url']);
                 $environment_app_d = explode("://", $environment_app_url[0]);
