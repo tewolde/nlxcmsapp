@@ -1,22 +1,22 @@
-# vaahcms-ready
-> VaahCMS: Develop enterprise application with content management
+# NlxStart
+> NlxCms: Develop enterprise application with content management
 
 Please consider starring the project to show your :heart: and support.
 
-VaahCMS is a web application development platform shipped with headless content management system.
+NlxCms is a web application development platform shipped with headless content management system.
 
 Built with `laravel`, `vue`, `vuex`, `buefy` and `bulma` with structured Modules & Themes.
 
 ## Quick Start
 ```shell
-npm i vaah -g
+npm i nlx -g
 ```
 
 ```shell
-vaah cms:install
+nlx cms:install
 ```
 
-## How is VaahCMS different?
+## How is NlxCms different?
 
 - It's purposed to develop large applications
 
@@ -26,14 +26,14 @@ vaah cms:install
 
 - Encourages to use latest technologies like Vue, Vuex
 
-## Why VaahCMS?
+## Why NlxCms?
 
-Well, to answer that, ask a question to yourself: Do you want to develop an enterprise application with content management that doesn't come in your way? If answer is yes, VaahCMS is for you.
+Well, to answer that, ask a question to yourself: Do you want to develop an enterprise application with content management that doesn't come in your way? If answer is yes, NlxCms is for you.
 
 
 ## Support us
 
-[WebReinvent](https://www.webreinvent.com) is a web agency based in Delhi, India. You'll find an overview of all our open source projects [on github](https://github.com/webreinvent).
+[Nilex](https://www.nilex.com) is a web agency. You'll find an overview of all our open source projects [on github](https://github.com/nilex).
 
 ## License
 
