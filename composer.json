@@ -24,8 +24,8 @@
         "laravel/framework": "^9.2",
         "laravel/sanctum": "^2.14.1",
         "laravel/tinker": "^2.7",
-        "tewolde/nlxcms": "@dev",
-        "tewolde/nlxnest": "@dev",
+        "nilex/nlxcms": "dev-main",
+        "nilex/nlxnest": "dev-main",
         "zanysoft/laravel-zip": "^1.0",
         "ext-imap": "*"
     },
@@ -36,7 +36,7 @@
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^6.1",
         "phpunit/phpunit": "^9.5.10",
-        "tewolde/nlxext": "@dev"
+        "nilex/nlxext": "dev-main"
     },
     "config": {
         "optimize-autoloader": true,
@@ -79,5 +79,19 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ]
-    }
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url":  "git@github.com:tewolde/nlxcms.git"
+        },
+        {
+            "type": "git",
+            "url":  "git@github.com:tewolde/nlxnest.git"
+        },
+        {
+            "type": "git",
+            "url":  "git@github.com:tewolde/nlxext.git"
+        }
+    ]
 }
