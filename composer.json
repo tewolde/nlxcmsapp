@@ -1,10 +1,10 @@
 {
     "name": "laravel/laravel",
     "type": "project",
-    "description": "VaahCMS is a web application development platform shipped with headless content management system.",
+    "description": "NilexCMS is a web application development platform shipped with headless content management system.",
     "keywords": [
         "framework",
-        "vaahcms",
+        "nlxcms",
         "cms",
         "headless cms",
         "hmvc",

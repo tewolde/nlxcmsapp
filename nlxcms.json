@@ -1,0 +1,49 @@
+{
+    "dependencies": [
+        {
+            "name": "Cms",
+            "slug": "cms",
+            "type": "module",
+            "source": "nlxcms",
+            "download_link": "",
+            "title": "CMS module to manage your content",
+            "thumbnail": "https://img.site/p/300/160",
+            "excerpt": "CMS is a framework for creating, managing, and deploying customized content types and fields.",
+            "author_name": "NlxCms",
+            "author_website": "https://nilex.dev",
+            "version": "v0.1.6",
+            "is_sample_data_available": true,
+            "import_sample_data": false
+        },
+        {
+            "name": "BulmaBlogTheme",
+            "slug": "bulmablogtheme",
+            "type": "theme",
+            "source": "nlxcms",
+            "download_link": "",
+            "title": "Bulma 0.9.2 Blog",
+            "thumbnail": "https://img.site/p/300/160",
+            "excerpt": "Bulma 0.9.2 Blog Theme for NlxCMS",
+            "github_url": "https://github.com/nilex/nlxcms-theme-bulma",
+            "author_name": "tewolde",
+            "author_website": "https://nilex.com",
+            "version": "v0.0.2",
+            "is_sample_data_available": true,
+            "import_sample_data": true
+        }
+    ],
+    "environments": {
+        "default": {
+            "env_file": ".env",
+            "app_url": "http://localhost"
+        },
+        "develop": {
+            "env_file": ".env.",
+            "app_url": "http://localhost:8000"
+        },
+        "local": {
+            "env_file": ".env.",
+            "app_url": "http://127.0.0.1:8000"
+        }
+    }
+}

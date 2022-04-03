@@ -189,7 +189,11 @@ return [
     | the aliases are "lazy" loaded so they don't hinder performance.
     |
     */
-
+    'aliases' => [
+        'Artisan' => Illuminate\Support\Facades\Artisan::class,
+        'URL' => Illuminate\Support\Facades\URL::class,
+        'Session' => Illuminate\Support\Facades\Session::class,
+    ]
 
 
 ];
